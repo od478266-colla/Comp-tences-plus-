@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les bases de l'IA — Compétences Plus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366f1',
+            dark: '#0f172a',
+            darker: '#020617',
+            accent: '#a78bfa'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-darker text-slate-200 font-sans antialiased">
+
+  <header class="fixed top-0 left-0 right-0 z-50 bg-darker/80 backdrop-blur-xl border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center font-bold text-white text-lg">CP</div>
+          <span class="font-semibold text-lg">Compétences Plus</span>
+        </a>
+        <div class="flex rounded-full bg-slate-800 p-1 text-xs font-medium">
+          <button onclick="setLang('fr')" id="btn-fr" class="lang-btn px-3 py-1.5 rounded-full">FR</button>
+          <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1.5 rounded-full">EN</button>
+          <button onclick="setLang('es')" id="btn-es" class="lang-btn px-3 py-1.5 rounded-full">ES</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <!-- Navigation -->
+      <div class="flex items-center gap-4 text-sm text-slate-400 mb-8">
+        <a href="index.html" class="hover:text-white transition" data-i18n="back_home">Retour à l'accueil</a>
+        <span>/</span>
+        <a href="ai.html" class="hover:text-white transition" data-i18n="dept_ai">Intelligence Artificielle</a>
+      </div>
+
+      <!-- Course header -->
+      <div class="mb-10">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="level-badge level-beginner" data-i18n="level_beginner">Débutant</span>
+          <span class="text-slate-500 text-sm">8 <span data-i18n="steps">étapes</span></span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3" data-i18n="ai_course1_title">Les bases de l'Intelligence Artificielle</h1>
+        <p class="text-slate-400 text-lg" data-i18n="ai_course1_desc">Comprendre ce qu'est l'IA, ses applications et comment l'utiliser au quotidien.</p>
+      </div>
+
+      <!-- Progress -->
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 mb-10" data-course="ai-auto">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-sm font-medium text-slate-300" data-i18n="your_progress">Votre progression</span>
+          <span class="text-sm font-semibold text-primary" data-progress-text="ai-auto">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-progress-bar="ai-auto" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- Steps -->
+      <div class="space-y-4" data-course="ai-auto">
+
+        <!-- Step 1 -->
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="1">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('ai-auto', '1')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-violet-400">ÉTAPE 1</span>
+              </div>
+              <h3 class="font-semibold text-white mb-2">Qu'est-ce que l'Intelligence Artificielle ?</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                L'IA est la capacité d'une machine à imiter des fonctions cognitives humaines : apprendre, raisonner, résoudre des problèmes. 
+                On distingue l'IA faible (spécialisée) et l'IA générale (encore théorique).
+              </p>
+              <div class="bg-slate-800/50 rounded-lg p-3 text-sm text-slate-300">
+                <strong class="text-violet-300">À retenir :</strong> ChatGPT, Midjourney, Claude sont des exemples d'IA générative moderne.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="2">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('ai-auto', '2')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-violet-400">ÉTAPE 2</span>
+              </div>
+              <h3 class="font-semibold text-white mb-2">Les grands types d'IA</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                Machine Learning, Deep Learning, IA générative, vision par ordinateur, NLP (traitement du langage)...
+                Chaque type a ses cas d'usage.
+              </p>
+              <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
+                <li>Machine Learning → prédictions à partir de données</li>
+                <li>Deep Learning → réseaux de neurones</li>
+                <li>IA générative → création de texte, images, code, audio</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="3">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('ai-auto', '3')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-violet-400">ÉTAPE 3</span>
+              </div>
+              <h3 class="font-semibold text-white mb-2">Créer un compte et découvrir ChatGPT</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                Rendez-vous sur chat.openai.com (ou l'équivalent Claude / Gemini). Créez un compte gratuit et explorez l'interface.
+              </p>
+              <div class="bg-emerald-500/10 border border-emerald-500/20 rounded-lg p-3 text-sm text-emerald-300">
+                <strong>Exercice :</strong> Demandez à ChatGPT de vous expliquer un concept simple comme s'il parlait à un enfant de 10 ans.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="4">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('ai-auto', '4')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-violet-400">ÉTAPE 4</span>
+              </div>
+              <h3 class="font-semibold text-white mb-2">Les bons réflexes pour bien utiliser l'IA</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Soyez précis, donnez du contexte, itérez, vérifiez les faits. L'IA peut halluciner. Ne lui confiez jamais d'informations sensibles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="5">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('ai-auto', '5')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-violet-400">ÉTAPE 5</span>
+              </div>
+              <h3 class="font-semibold text-white mb-2">Cas d'usage concrets au quotidien</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                Rédaction d'emails, résumé de documents, brainstorming, traduction, aide au code, planification, apprentissage...
+              </p>
+              <div class="grid grid-cols-2 gap-2 text-sm">
+                <div class="bg-slate-800/50 rounded-lg p-2 text-center">📧 Emails</div>
+                <div class="bg-slate-800/50 rounded-lg p-2 text-center">📝 Résumés</div>
+                <div class="bg-slate-800/50 rounded-lg p-2 text-center">💡 Idées</div>
+                <div class="bg-slate-800/50 rounded-lg p-2 text-center">💻 Code</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="6">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('ai-auto', '6')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-violet-400">ÉTAPE 6</span>
+              </div>
+              <h3 class="font-semibold text-white mb-2">Les limites et les risques</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Hallucinations, biais, confidentialité, dépendance, deepfakes... Comprendre les limites est aussi important que savoir utiliser l'outil.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="7">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('ai-auto', '7')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-violet-400">ÉTAPE 7</span>
+              </div>
+              <h3 class="font-semibold text-white mb-2">Outils IA gratuits à connaître</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                ChatGPT (version gratuite), Claude.ai, Google Gemini, Microsoft Copilot, Perplexity, Leonardo.ai (images)...
+              </p>
+              <a href="#" class="inline-flex items-center text-sm text-primary hover:underline">
+                Voir la liste complète des outils recommandés →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="8">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('ai-auto', '8')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-violet-400">ÉTAPE 8</span>
+              </div>
+              <h3 class="font-semibold text-white mb-2">Mini-projet final</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                Utilisez une IA pour créer un plan de contenu de 7 jours sur un sujet de votre choix (YouTube, blog, LinkedIn...).
+              </p>
+              <div class="bg-primary/10 border border-primary/20 rounded-lg p-4 text-sm">
+                <strong class="text-primary">Projet :</strong> 
+                <ol class="list-decimal list-inside mt-2 space-y-1 text-slate-300">
+                  <li>Choisissez un thème</li>
+                  <li>Demandez un calendrier éditorial</li>
+                  <li>Faites générer 3 titres accrocheurs</li>
+                  <li>Demandez un script court pour le premier contenu</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Next courses -->
+      <div class="mt-14 pt-10 border-t border-slate-800">
+        <h3 class="text-lg font-semibold text-white mb-4">Continuer votre parcours IA</h3>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <a href="course-ai-prompt.html" class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 hover:border-violet-500/40 transition">
+            <span class="level-badge level-intermediate mb-2 inline-block" data-i18n="level_intermediate">Intermédiaire</span>
+            <div class="font-medium text-white" data-i18n="ai_course2_title">Prompt Engineering Mastery</div>
+          </a>
+          <a href="course-ai-auto.html" class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 hover:border-violet-500/40 transition">
+            <span class="level-badge level-advanced mb-2 inline-block" data-i18n="level_advanced">Avancé</span>
+            <div class="font-medium text-white" data-i18n="ai_course3_title">Automatisation avec l'IA</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm" data-i18n="footer_text">
+      Formations 100% gratuites • Apprenez les compétences du futur
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

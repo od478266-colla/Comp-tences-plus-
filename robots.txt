@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://competences-plus.com/sitemap.xml

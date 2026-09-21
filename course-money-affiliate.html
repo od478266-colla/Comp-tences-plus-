@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apprenez l'affiliation marketing gratuitement : choisir les bons programmes, créer du contenu qui convertit et gagner des commissions.">
+  <meta name="robots" content="index, follow">
+  <title>Affiliation pour débutants — Cours gratuit | Compétences Plus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#6366f1', dark: '#0f172a', darker: '#020617', accent: '#a78bfa' },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-darker text-slate-200 font-sans antialiased">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-darker/80 backdrop-blur-xl border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center font-bold text-white text-lg">CP</div>
+          <span class="font-semibold text-lg">Compétences Plus</span>
+        </a>
+        <div class="flex rounded-full bg-slate-800 p-1 text-xs font-medium">
+          <button onclick="setLang('fr')" id="btn-fr" class="lang-btn px-3 py-1.5 rounded-full">FR</button>
+          <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1.5 rounded-full">EN</button>
+          <button onclick="setLang('es')" id="btn-es" class="lang-btn px-3 py-1.5 rounded-full">ES</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center gap-4 text-sm text-slate-400 mb-8">
+        <a href="index.html" class="hover:text-white transition" data-i18n="back_home">Retour à l'accueil</a>
+        <span>/</span>
+        <a href="money.html" class="hover:text-white transition" data-i18n="dept_money">Gagner en ligne</a>
+      </div>
+
+      <div class="mb-10">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="level-badge level-intermediate" data-i18n="level_intermediate">Intermédiaire</span>
+          <span class="text-slate-500 text-sm">10 <span data-i18n="steps">étapes</span></span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3">Affiliation pour débutants</h1>
+        <p class="text-slate-400 text-lg">Apprends à recommander des produits et services et gagner des commissions de façon éthique.</p>
+      </div>
+
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 mb-10" data-course="money-affiliate">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-sm font-medium text-slate-300" data-i18n="your_progress">Votre progression</span>
+          <span class="text-sm font-semibold text-primary" data-progress-text="money-affiliate">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-progress-bar="money-affiliate" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div class="space-y-4" data-course="money-affiliate">
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="1">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '1')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 1</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">C’est quoi l’affiliation ?</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Tu recommandes un produit/service via un lien unique. Si quelqu’un achète, tu touches une commission. Simple et scalable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="2">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '2')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 2</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">Choisir les bons programmes</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Amazon, Notion, vidIQ, outils IA, formations, logiciels SaaS… Critères : commission, cookie, qualité du produit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="3">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '3')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 3</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">Trouver une niche rentable</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Mieux vaut être spécialisé (ex: outils pour créateurs TikTok) que généraliste.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="4">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '4')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 4</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">Créer du contenu qui convertit</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Tutoriels, comparatifs, « outils que j’utilise », reviews honnêtes. La confiance > le hard sell.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="5">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '5')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 5</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">Où publier ?</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                YouTube, TikTok, blog, newsletter, Instagram, Twitter/X. Chaque plateforme a sa stratégie.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="6">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '6')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 6</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">Transparence et éthique</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Toujours indiquer les liens affiliés. Recommande seulement ce que tu utilises ou crois vraiment utile.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="7">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '7')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 7</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">Suivre ses performances</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Tableaux de bord des programmes, Google Analytics, UTM. Savoir ce qui marche.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="8">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '8')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 8</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">Scaler sans perdre son authenticité</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Plus de contenu, plus de plateformes, email list, partnerships… tout en restant honnête.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="9">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '9')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 9</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">Les erreurs qui tuent les commissions</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Trop de liens, pas de valeur, spam, mauvaise niche, abandon trop tôt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="10">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-affiliate', '10')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-semibold text-amber-400">ÉTAPE 10</span>
+              <h3 class="font-semibold text-white mb-2 mt-1">Projet final : lance ton premier lien</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                Choisis 1-2 programmes, crée un contenu (vidéo ou post) et place ton premier lien affilié.
+              </p>
+              <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4 text-sm">
+                <strong class="text-amber-300">Objectif :</strong> Passer à l’action et obtenir tes premières données réelles.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm" data-i18n="footer_text">Formations 100% gratuites • Apprenez les compétences du futur</div>
+  </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

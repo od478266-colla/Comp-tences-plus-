@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maîtrisez TikTok, Reels et Shorts. Cours gratuits sur les hooks, l'algorithme et la stratégie de contenu viral.">
+  <meta name="robots" content="index, follow">
+  <title>Contenu Viral TikTok & Reels — Formations gratuites | Compétences Plus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#6366f1', dark: '#0f172a', darker: '#020617', accent: '#a78bfa' },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-darker text-slate-200 font-sans antialiased">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-darker/80 backdrop-blur-xl border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center font-bold text-white text-lg">CP</div>
+          <span class="font-semibold text-lg">Compétences Plus</span>
+        </a>
+        <div class="flex rounded-full bg-slate-800 p-1 text-xs font-medium">
+          <button onclick="setLang('fr')" id="btn-fr" class="lang-btn px-3 py-1.5 rounded-full">FR</button>
+          <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1.5 rounded-full">EN</button>
+          <button onclick="setLang('es')" id="btn-es" class="lang-btn px-3 py-1.5 rounded-full">ES</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="inline-flex items-center gap-2 text-slate-400 hover:text-white text-sm mb-8 transition">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        <span data-i18n="back_home">Retour à l'accueil</span>
+      </a>
+
+      <div class="mb-12">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-3xl">📱</div>
+          <div>
+            <h1 class="text-3xl sm:text-4xl font-bold text-white" data-i18n="dept_viral">Contenu Viral</h1>
+            <p class="text-slate-400 mt-1" data-i18n="dept_viral_sub">Maîtrise TikTok, Reels et Shorts pour créer du contenu qui cartonne.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-5">
+        <a href="course-viral-tiktok.html" class="block group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-pink-500/40 transition-all">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="flex-1">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="level-badge level-beginner" data-i18n="level_beginner">Débutant</span>
+                <span class="text-slate-500 text-sm">8 <span data-i18n="steps">étapes</span></span>
+              </div>
+              <h3 class="text-xl font-semibold text-white" data-i18n="viral_c1_title">TikTok de A à Z</h3>
+              <p class="text-slate-400 text-sm mt-1" data-i18n="viral_c1_desc">Créer un compte, comprendre l’algorithme, premiers contenus et croissance de base.</p>
+            </div>
+            <span class="text-pink-400 text-sm font-medium" data-i18n="start_course">Commencer le cours</span>
+          </div>
+        </a>
+
+        <div class="block group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-pink-500/40 transition-all">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="flex-1">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="level-badge level-intermediate" data-i18n="level_intermediate">Intermédiaire</span>
+                <span class="text-slate-500 text-sm">10 <span data-i18n="steps">étapes</span></span>
+              </div>
+              <h3 class="text-xl font-semibold text-white" data-i18n="viral_c2_title">Hooks & Viralité</h3>
+              <p class="text-slate-400 text-sm mt-1" data-i18n="viral_c2_desc">Techniques de hooks, storytelling court, tendances et psychologie de l’attention.</p>
+            </div>
+            <span class="text-pink-400 text-sm font-medium" data-i18n="start_course">Commencer le cours</span>
+          </div>
+        </div>
+
+        <div class="block group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-pink-500/40 transition-all">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="flex-1">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="level-badge level-advanced" data-i18n="level_advanced">Avancé</span>
+                <span class="text-slate-500 text-sm">9 <span data-i18n="steps">étapes</span></span>
+              </div>
+              <h3 class="text-xl font-semibold text-white" data-i18n="viral_c3_title">Stratégie Multi-plateformes</h3>
+              <p class="text-slate-400 text-sm mt-1" data-i18n="viral_c3_desc">Recycler le contenu, Reels, Shorts, cross-posting et monétisation short-form.</p>
+            </div>
+            <span class="text-pink-400 text-sm font-medium" data-i18n="start_course">Commencer le cours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm" data-i18n="footer_text">Formations 100% gratuites • Apprenez les compétences du futur</div>
+  </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
