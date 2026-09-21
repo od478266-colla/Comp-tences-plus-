@@ -74,7 +74,7 @@ function toggleStep(courseId, stepId) {
 
 // Richer confetti
 function launchConfetti() {
-  const colors = ['#6366f1', '#a78bfa', '#34d399', '#f472b6', '#fbbf24', '#22d3ee', '#fb7185', '#c084fc'];
+  const colors = ['#7c3aed', '#a78bfa', '#f472b6', '#34d399', '#fbbf24', '#38bdf8', '#fb7185', '#c084fc'];
   const count = 140;
   
   for (let i = 0; i < count; i++) {
