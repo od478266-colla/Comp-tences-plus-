@@ -3,97 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compétences Plus — Formations gratuites en IA, TikTok, Side Hustle & plus</title>
-  <meta name="description" content="Apprenez gratuitement l'Intelligence Artificielle, TikTok, YouTube, Side Hustle, Affiliation et 3D. Cours concrets, progressifs et 100% gratuits pour les jeunes.">
-  <meta name="keywords" content="formations gratuites, apprendre IA, TikTok, side hustle, affiliation, prompt engineering, compétences digitales, cours gratuits, YouTube, Blender">
-  <meta name="author" content="Compétences Plus">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://competences-plus.com/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://competences-plus.com/">
-  <meta property="og:title" content="Compétences Plus — Formations gratuites pour les compétences du futur">
-  <meta property="og:description" content="IA, TikTok, Side Hustle, Affiliation, 3D... Apprenez gratuitement avec des cours concrets et progressifs.">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:site_name" content="Compétences Plus">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Compétences Plus — Formations gratuites">
-  <meta name="twitter:description" content="Apprenez l'IA, TikTok, Side Hustle et plus gratuitement. Cours concrets pour les jeunes.">
-
-  <!-- Hreflang -->
-  <link rel="alternate" hreflang="fr" href="https://competences-plus.com/">
-  <link rel="alternate" hreflang="en" href="https://competences-plus.com/">
-  <link rel="alternate" hreflang="es" href="https://competences-plus.com/">
-  <link rel="alternate" hreflang="x-default" href="https://competences-plus.com/">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Compétences Plus",
-    "description": "Plateforme de formations gratuites en compétences digitales : Intelligence Artificielle, TikTok, Side Hustle, Affiliation, 3D et productivité.",
-    "url": "https://competences-plus.com",
-    "inLanguage": ["fr", "en", "es"],
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR"
-    }
-  }
-  </script>
-
+  <title>Compétences Plus — Formations gratuites pour ton avenir</title>
+  <meta name="description" content="Plateforme de formations gratuites en IA, TikTok, Side Hustle, YouTube, 3D et productivité. Apprends gratuitement les compétences du futur.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#6366f1',
-            dark: '#0f172a',
-            darker: '#020617',
-            accent: '#a78bfa'
+            primary: '#2563eb',
+            secondary: '#7c3aed',
+            soft: '#f8fafc'
           },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif']
-          }
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
         }
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { background: #f8fafc; }
+    .hero-gradient {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1e293b 100%);
+    }
+    .cat-card {
+      transition: all 0.3s cubic-bezier(0.22,1,0.36,1);
+    }
+    .cat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    .mascot-float {
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+  </style>
 </head>
-<body class="bg-darker text-slate-200 font-sans antialiased">
+<body class="font-sans text-slate-800 antialiased">
 
-  <!-- Language Switcher + Nav -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-darker/80 backdrop-blur-xl border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Top Nav -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-16">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center gap-2 group">
-          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center font-bold text-white text-lg shadow-lg shadow-primary/30 group-hover:scale-105 transition">CP</div>
-          <span class="font-semibold text-lg tracking-tight">Compétences Plus</span>
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center text-white font-bold text-sm">CP</div>
+          <div>
+            <div class="font-bold text-slate-900 leading-tight">Compétences <span class="text-blue-600">Plus</span></div>
+            <div class="text-[10px] text-slate-400 -mt-0.5">Apprends. Crée. Évolue.</div>
+          </div>
         </a>
-
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="#departments" class="nav-link hover:text-white transition" data-i18n="nav_departments">Départements</a>
-          <a href="#how" class="nav-link hover:text-white transition" data-i18n="nav_how">Comment ça marche</a>
-          <a href="#tools" class="nav-link hover:text-white transition" data-i18n="nav_tools">Outils recommandés</a>
+        
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="index.html" class="text-blue-600 border-b-2 border-blue-600 pb-0.5">Accueil</a>
+          <a href="#categories" class="hover:text-blue-600 transition">Formations</a>
+          <a href="#why" class="hover:text-blue-600 transition">À propos</a>
         </nav>
 
-        <!-- Language Switcher -->
-        <div class="flex items-center gap-3">
-          <div class="flex rounded-full bg-slate-800 p-1 text-xs font-medium">
-            <button onclick="setLang('fr')" id="btn-fr" class="lang-btn px-3 py-1.5 rounded-full transition">FR</button>
-            <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1.5 rounded-full transition">EN</button>
-            <button onclick="setLang('es')" id="btn-es" class="lang-btn px-3 py-1.5 rounded-full transition">ES</button>
+        <div class="flex items-center gap-2">
+          <div class="flex rounded-full bg-slate-100 p-0.5 text-xs font-semibold">
+            <button onclick="setLang('fr')" id="btn-fr" class="lang-btn px-2.5 py-1 rounded-full">FR</button>
+            <button onclick="setLang('en')" id="btn-en" class="lang-btn px-2.5 py-1 rounded-full">EN</button>
+            <button onclick="setLang('es')" id="btn-es" class="lang-btn px-2.5 py-1 rounded-full">ES</button>
           </div>
         </div>
       </div>
@@ -101,297 +75,229 @@
   </header>
 
   <!-- Hero -->
-  <section class="relative pt-32 pb-24 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent"></div>
-    <div class="orb top-16 left-1/4 w-[28rem] h-[28rem] bg-primary/25"></div>
-    <div class="orb bottom-0 right-1/5 w-96 h-96 bg-accent/20" style="animation-delay: 2s"></div>
-    <div class="orb top-1/3 right-1/3 w-64 h-64 bg-pink-500/10" style="animation-delay: 4s"></div>
-
-    <div class="relative max-w-5xl mx-auto px-4 text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-sm mb-8 animate-fade-in">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span data-i18n="hero_badge">100% gratuit • Formations de qualité</span>
-      </div>
-
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-tight animate-fade-in-up">
-        <span data-i18n="hero_title_1">Maîtrisez les compétences</span><br>
-        <span class="bg-gradient-to-r from-primary via-accent to-pink-400 bg-clip-text text-transparent" data-i18n="hero_title_2">du futur</span>
-      </h1>
-
-      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 animate-fade-in-up delay-100" data-i18n="hero_subtitle">
-        Intelligence Artificielle, YouTube, 3D et outils digitaux. Apprenez étape par étape, à votre rythme, gratuitement.
-      </p>
-
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-200">
-        <a href="#departments" class="btn-glow px-8 py-3.5 rounded-xl bg-primary hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-primary/30">
-          <span data-i18n="hero_cta">Commencer maintenant</span>
-        </a>
-        <a href="#how" class="px-8 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-700 hover:border-slate-500 text-slate-200 font-medium transition-all duration-300 hover:-translate-y-0.5">
-          <span data-i18n="hero_secondary">Comment ça fonctionne</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Departments -->
-  <section id="departments" class="py-24 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16 observe-fade">
-        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4" data-i18n="dept_title">Choisissez votre département</h2>
-        <p class="text-slate-400 max-w-xl mx-auto" data-i18n="dept_subtitle">Des parcours clairs, progressifs et adaptés à tous les niveaux.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- AI -->
-        <a href="ai.html" class="dept-card group relative bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
-          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition">🤖</div>
-          <h3 class="text-xl font-semibold text-white mb-2" data-i18n="dept_ai">Intelligence Artificielle</h3>
-          <p class="text-slate-400 text-sm mb-4" data-i18n="dept_ai_desc">ChatGPT, Prompt Engineering, automatisation, agents IA...</p>
-          <div class="flex items-center text-primary text-sm font-medium">
-            <span data-i18n="dept_explore">Explorer</span>
-            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+  <section class="hero-gradient text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-sm mb-5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            Plateforme de formation 100% gratuite
           </div>
-        </a>
-
-        <!-- YouTube -->
-        <a href="youtube.html" class="dept-card group relative bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-red-500/10">
-          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-red-500 to-rose-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition">▶️</div>
-          <h3 class="text-xl font-semibold text-white mb-2" data-i18n="dept_yt">YouTube & Contenu</h3>
-          <p class="text-slate-400 text-sm mb-4" data-i18n="dept_yt_desc">Création, monétisation, algorithme, montage, stratégie...</p>
-          <div class="flex items-center text-red-400 text-sm font-medium">
-            <span data-i18n="dept_explore">Explorer</span>
-            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+            Compétences <span class="text-blue-400">Plus</span>
+          </h1>
+          <p class="text-slate-300 text-lg mb-6 max-w-md">
+            Formations en ligne gratuites pour apprendre l’IA, TikTok, le Side Hustle, YouTube, la 3D et bien plus.
+          </p>
+          <div class="flex flex-wrap gap-3 mb-8 text-sm">
+            <span class="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full">✓ Formations gratuites</span>
+            <span class="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full">✓ Accès immédiat</span>
+            <span class="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full">✓ Pour les jeunes</span>
           </div>
-        </a>
-
-        <!-- Viral Content (NEW) -->
-        <a href="viral.html" class="dept-card group relative bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-pink-500/10">
-          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition">📱</div>
-          <h3 class="text-xl font-semibold text-white mb-2" data-i18n="dept_viral">Contenu Viral</h3>
-          <p class="text-slate-400 text-sm mb-4" data-i18n="dept_viral_desc">TikTok, Reels, Shorts, hooks, tendances et viralité...</p>
-          <div class="flex items-center text-pink-400 text-sm font-medium">
-            <span data-i18n="dept_explore">Explorer</span>
-            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </div>
-        </a>
-
-        <!-- 3D -->
-        <a href="3d.html" class="dept-card group relative bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/10">
-          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition">🧊</div>
-          <h3 class="text-xl font-semibold text-white mb-2" data-i18n="dept_3d">3D & Design</h3>
-          <p class="text-slate-400 text-sm mb-4" data-i18n="dept_3d_desc">Blender, modélisation, animation, rendu, design 3D...</p>
-          <div class="flex items-center text-cyan-400 text-sm font-medium">
-            <span data-i18n="dept_explore">Explorer</span>
-            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </div>
-        </a>
-
-        <!-- Money / Side Hustle (NEW) -->
-        <a href="money.html" class="dept-card group relative bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-500/10">
-          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition">💰</div>
-          <h3 class="text-xl font-semibold text-white mb-2" data-i18n="dept_money">Gagner en ligne</h3>
-          <p class="text-slate-400 text-sm mb-4" data-i18n="dept_money_desc">Side Hustle, Freelance, Affiliation, produits digitaux...</p>
-          <div class="flex items-center text-amber-400 text-sm font-medium">
-            <span data-i18n="dept_explore">Explorer</span>
-            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </div>
-        </a>
-
-        <!-- Tools -->
-        <a href="tools.html" class="dept-card group relative bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/10">
-          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition">🛠️</div>
-          <h3 class="text-xl font-semibold text-white mb-2" data-i18n="dept_tools">Outils & Productivité</h3>
-          <p class="text-slate-400 text-sm mb-4" data-i18n="dept_tools_desc">Notion, automatisation, no-code, workflows efficaces...</p>
-          <div class="flex items-center text-emerald-400 text-sm font-medium">
-            <span data-i18n="dept_explore">Explorer</span>
-            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section id="how" class="py-24 bg-slate-900/40">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4" data-i18n="how_title">Comment ça marche</h2>
-        <p class="text-slate-400" data-i18n="how_subtitle">Simple, progressif et motivant</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center">
-          <div class="w-16 h-16 mx-auto rounded-2xl bg-primary/20 flex items-center justify-center text-2xl mb-5 border border-primary/30">1</div>
-          <h3 class="text-lg font-semibold text-white mb-2" data-i18n="how_1_title">Choisissez un département</h3>
-          <p class="text-slate-400 text-sm" data-i18n="how_1_desc">IA, YouTube, 3D ou Productivité. Chaque domaine a ses propres parcours.</p>
+          <a href="#categories" class="inline-flex items-center gap-2 px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-full transition shadow-lg shadow-blue-900/40">
+            Explorer les formations →
+          </a>
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 mx-auto rounded-2xl bg-accent/20 flex items-center justify-center text-2xl mb-5 border border-accent/30">2</div>
-          <h3 class="text-lg font-semibold text-white mb-2" data-i18n="how_2_title">Suivez les étapes</h3>
-          <p class="text-slate-400 text-sm" data-i18n="how_2_desc">Cours découpés en niveaux et en étapes claires. Avancez à votre rythme.</p>
-        </div>
-        <div class="text-center">
-          <div class="w-16 h-16 mx-auto rounded-2xl bg-emerald-500/20 flex items-center justify-center text-2xl mb-5 border border-emerald-500/30">3</div>
-          <h3 class="text-lg font-semibold text-white mb-2" data-i18n="how_3_title">Pratiquez & progressez</h3>
-          <p class="text-slate-400 text-sm" data-i18n="how_3_desc">Exercices, projets et ressources pour ancrer durablement les compétences.</p>
+
+        <!-- Mascot side -->
+        <div class="flex justify-center md:justify-end">
+          <div class="relative">
+            <img src="images/mascot.svg" alt="Tortue mascotte" class="mascot-float w-48 h-52 sm:w-56 sm:h-60 drop-shadow-2xl">
+            <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-white text-slate-800 text-xs font-semibold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+              Des compétences pour un meilleur avenir ! 🐢
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Recommended Tools (Affiliate ready) -->
-  <section id="tools" class="py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4" data-i18n="tools_title">Outils recommandés</h2>
-        <p class="text-slate-400 max-w-xl mx-auto" data-i18n="tools_subtitle">Les meilleurs outils pour progresser plus vite. Liens d'affiliation possibles (transparence totale).</p>
-      </div>
+  <!-- Search bar -->
+  <div class="max-w-4xl mx-auto px-4 -mt-6 relative z-10">
+    <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-3 flex items-center gap-3">
+      <svg class="w-5 h-5 text-slate-400 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      <input type="text" placeholder="Rechercher une formation, un sujet..." class="flex-1 outline-none text-slate-700 placeholder-slate-400 text-sm py-2">
+      <button class="bg-blue-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-blue-500 transition">Rechercher</button>
+    </div>
+  </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Notion -->
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-emerald-500/40 transition group">
-          <div class="flex items-start justify-between mb-3">
-            <div class="text-3xl">📝</div>
-            <span class="text-[10px] uppercase tracking-wider bg-emerald-500/15 text-emerald-400 px-2 py-0.5 rounded-full font-semibold">Affiliate</span>
-          </div>
-          <h4 class="font-semibold text-white mb-1">Notion</h4>
-          <p class="text-slate-400 text-sm mb-4">Organisation, bases de données et productivité. Excellent pour structurer ton apprentissage.</p>
-          <a href="https://www.notion.so" target="_blank" rel="noopener sponsored" class="inline-flex items-center text-primary text-sm font-medium hover:underline">
-            Essayer Notion →
-          </a>
-        </div>
-
-        <!-- vidIQ -->
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-red-500/40 transition group">
-          <div class="flex items-start justify-between mb-3">
-            <div class="text-3xl">📊</div>
-            <span class="text-[10px] uppercase tracking-wider bg-red-500/15 text-red-400 px-2 py-0.5 rounded-full font-semibold">Affiliate</span>
-          </div>
-          <h4 class="font-semibold text-white mb-1">vidIQ</h4>
-          <p class="text-slate-400 text-sm mb-4">Outil n°1 pour croître sur YouTube : SEO, idées de titres, analytics et suggestions.</p>
-          <a href="https://vidiq.com" target="_blank" rel="noopener sponsored" class="inline-flex items-center text-primary text-sm font-medium hover:underline">
-            Découvrir vidIQ →
-          </a>
-        </div>
-
-        <!-- Canva -->
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-blue-500/40 transition group">
-          <div class="flex items-start justify-between mb-3">
-            <div class="text-3xl">🎨</div>
-            <span class="text-[10px] uppercase tracking-wider bg-blue-500/15 text-blue-400 px-2 py-0.5 rounded-full font-semibold">Recommandé</span>
-          </div>
-          <h4 class="font-semibold text-white mb-1">Canva Pro</h4>
-          <p class="text-slate-400 text-sm mb-4">Designs, miniatures YouTube, présentations et contenus visuels en quelques clics.</p>
-          <a href="https://www.canva.com" target="_blank" rel="noopener" class="inline-flex items-center text-primary text-sm font-medium hover:underline">
-            Essayer Canva →
-          </a>
-        </div>
-
-        <!-- Blender -->
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-cyan-500/40 transition group">
-          <div class="flex items-start justify-between mb-3">
-            <div class="text-3xl">🧊</div>
-            <span class="text-[10px] uppercase tracking-wider bg-cyan-500/15 text-cyan-400 px-2 py-0.5 rounded-full font-semibold">Gratuit</span>
-          </div>
-          <h4 class="font-semibold text-white mb-1">Blender</h4>
-          <p class="text-slate-400 text-sm mb-4">Le logiciel 3D open-source le plus puissant. Modélisation, animation, rendu...</p>
-          <a href="https://www.blender.org" target="_blank" rel="noopener" class="inline-flex items-center text-primary text-sm font-medium hover:underline">
-            Télécharger Blender →
-          </a>
-        </div>
-
-        <!-- CapCut -->
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-pink-500/40 transition group">
-          <div class="flex items-start justify-between mb-3">
-            <div class="text-3xl">🎬</div>
-            <span class="text-[10px] uppercase tracking-wider bg-pink-500/15 text-pink-400 px-2 py-0.5 rounded-full font-semibold">Gratuit</span>
-          </div>
-          <h4 class="font-semibold text-white mb-1">CapCut</h4>
-          <p class="text-slate-400 text-sm mb-4">Montage vidéo moderne, effets, sous-titres auto. Parfait pour YouTube & TikTok.</p>
-          <a href="https://www.capcut.com" target="_blank" rel="noopener" class="inline-flex items-center text-primary text-sm font-medium hover:underline">
-            Essayer CapCut →
-          </a>
-        </div>
-
-        <!-- ChatGPT -->
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-violet-500/40 transition group">
-          <div class="flex items-start justify-between mb-3">
-            <div class="text-3xl">🤖</div>
-            <span class="text-[10px] uppercase tracking-wider bg-violet-500/15 text-violet-400 px-2 py-0.5 rounded-full font-semibold">Essentiel</span>
-          </div>
-          <h4 class="font-semibold text-white mb-1">ChatGPT / Claude</h4>
-          <p class="text-slate-400 text-sm mb-4">Les assistants IA indispensables pour apprendre, créer et automatiser.</p>
-          <a href="https://chat.openai.com" target="_blank" rel="noopener" class="inline-flex items-center text-primary text-sm font-medium hover:underline">
-            Accéder à ChatGPT →
-          </a>
+  <!-- Categories -->
+  <section id="categories" class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Nos catégories de formations</h2>
+          <p class="text-slate-500 mt-1">Choisis ton domaine et développe tes compétences.</p>
         </div>
       </div>
 
-      <p class="text-center text-xs text-slate-500 mt-8 max-w-2xl mx-auto">
-        Certains liens peuvent être des liens d'affiliation. Cela ne change rien au prix pour toi, et cela nous aide à garder la plateforme gratuite. Merci pour ton soutien !
-      </p>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <a href="ai.html" class="cat-card bg-gradient-to-br from-violet-500 to-purple-600 text-white rounded-2xl p-5 text-center shadow-lg">
+          <div class="text-3xl mb-2">🤖</div>
+          <div class="font-bold text-sm">IA & ChatGPT</div>
+          <div class="text-white/70 text-xs mt-1">Automatisation, prompts...</div>
+        </a>
+        <a href="youtube.html" class="cat-card bg-gradient-to-br from-red-500 to-rose-600 text-white rounded-2xl p-5 text-center shadow-lg">
+          <div class="text-3xl mb-2">▶️</div>
+          <div class="font-bold text-sm">YouTube</div>
+          <div class="text-white/70 text-xs mt-1">Création & monétisation</div>
+        </a>
+        <a href="viral.html" class="cat-card bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white rounded-2xl p-5 text-center shadow-lg">
+          <div class="text-3xl mb-2">📱</div>
+          <div class="font-bold text-sm">Contenu Viral</div>
+          <div class="text-white/70 text-xs mt-1">TikTok, Reels, Shorts</div>
+        </a>
+        <a href="3d.html" class="cat-card bg-gradient-to-br from-cyan-500 to-blue-600 text-white rounded-2xl p-5 text-center shadow-lg">
+          <div class="text-3xl mb-2">🧊</div>
+          <div class="font-bold text-sm">3D & Design</div>
+          <div class="text-white/70 text-xs mt-1">Blender, animation</div>
+        </a>
+        <a href="money.html" class="cat-card bg-gradient-to-br from-amber-400 to-orange-500 text-white rounded-2xl p-5 text-center shadow-lg">
+          <div class="text-3xl mb-2">💰</div>
+          <div class="font-bold text-sm">Gagner en ligne</div>
+          <div class="text-white/70 text-xs mt-1">Side Hustle, Affiliation</div>
+        </a>
+        <a href="tools.html" class="cat-card bg-gradient-to-br from-emerald-400 to-teal-500 text-white rounded-2xl p-5 text-center shadow-lg">
+          <div class="text-3xl mb-2">🛠️</div>
+          <div class="font-bold text-sm">Productivité</div>
+          <div class="text-white/70 text-xs mt-1">Notion, No-code</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular courses -->
+  <section class="py-12 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Formations populaires</h2>
+          <p class="text-slate-500 mt-1">Les plus suivies par la communauté.</p>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Course 1 -->
+        <a href="course-ai-basics.html" class="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+          <div class="h-40 bg-gradient-to-br from-violet-500 to-purple-700 flex items-center justify-center text-5xl">🤖</div>
+          <div class="p-5">
+            <div class="text-xs font-semibold text-violet-600 mb-1">IA & ChatGPT</div>
+            <h3 class="font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition">Les bases de l'Intelligence Artificielle</h3>
+            <p class="text-slate-500 text-sm mb-3">Comprendre l'IA et l'utiliser au quotidien.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-emerald-600 font-bold text-sm">Gratuit</span>
+              <span class="text-blue-600 text-sm font-semibold">Commencer →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Course 2 -->
+        <a href="course-viral-tiktok.html" class="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+          <div class="h-40 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-5xl">📱</div>
+          <div class="p-5">
+            <div class="text-xs font-semibold text-pink-600 mb-1">Contenu Viral</div>
+            <h3 class="font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition">TikTok de A à Z</h3>
+            <p class="text-slate-500 text-sm mb-3">Créer du contenu viral étape par étape.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-emerald-600 font-bold text-sm">Gratuit</span>
+              <span class="text-blue-600 text-sm font-semibold">Commencer →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Course 3 -->
+        <a href="course-money-sidehustle.html" class="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+          <div class="h-40 bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-5xl">💰</div>
+          <div class="p-5">
+            <div class="text-xs font-semibold text-amber-600 mb-1">Gagner en ligne</div>
+            <h3 class="font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition">Side Hustle : les bases</h3>
+            <p class="text-slate-500 text-sm mb-3">Lance ton activité secondaire concrètement.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-emerald-600 font-bold text-sm">Gratuit</span>
+              <span class="text-blue-600 text-sm font-semibold">Commencer →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section id="why" class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Pourquoi choisir Compétences Plus ?</h2>
+        <p class="text-slate-500 mt-1">Une plateforme pensée pour ta réussite.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-blue-100 flex items-center justify-center text-xl mb-3">🆓</div>
+          <h3 class="font-bold mb-1">100% Gratuit</h3>
+          <p class="text-slate-500 text-sm">Tous les cours sont gratuits, sans carte bancaire.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-violet-100 flex items-center justify-center text-xl mb-3">🎯</div>
+          <h3 class="font-bold mb-1">Concret & pratique</h3>
+          <p class="text-slate-500 text-sm">Des étapes actionnables, pas de blabla inutile.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-pink-100 flex items-center justify-center text-xl mb-3">📱</div>
+          <h3 class="font-bold mb-1">Pensé mobile</h3>
+          <p class="text-slate-500 text-sm">Apprends depuis ton téléphone où tu veux.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-emerald-100 flex items-center justify-center text-xl mb-3">🐢</div>
+          <h3 class="font-bold mb-1">Avec la tortue</h3>
+          <p class="text-slate-500 text-sm">Ta mascotte te guide et te motive à progresser.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-14 px-4 hero-gradient text-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <img src="images/mascot.svg" alt="Mascotte" class="w-24 h-28 mx-auto mb-4 mascot-float">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-3">Prêt à développer tes compétences ?</h2>
+      <p class="text-slate-300 mb-6">Rejoins des milliers de jeunes et commence dès aujourd’hui, gratuitement.</p>
+      <a href="#categories" class="inline-flex items-center gap-2 px-8 py-3.5 bg-blue-500 hover:bg-blue-400 text-white font-semibold rounded-full transition">
+        Commencer maintenant →
+      </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-800 py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex items-center gap-2">
-          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center font-bold text-white text-sm">CP</div>
-          <span class="font-semibold">Compétences Plus</span>
+  <footer class="bg-slate-900 text-slate-400 py-12 px-4">
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 text-white font-bold mb-3">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center text-sm">CP</div>
+          Compétences Plus
         </div>
-        <p class="text-slate-500 text-sm text-center" data-i18n="footer_text">
-          Formations 100% gratuites • Apprenez les compétences du futur
-        </p>
-        <div class="flex gap-4 text-sm text-slate-400">
-          <a href="#" class="hover:text-white transition" data-i18n="footer_privacy">Confidentialité</a>
-          <a href="#" class="hover:text-white transition" data-i18n="footer_terms">Mentions légales</a>
-        </div>
+        <p class="text-sm">Apprends. Crée. Évolue.<br>Formations gratuites pour les compétences du futur.</p>
       </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Formations</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="ai.html" class="hover:text-white transition">Intelligence Artificielle</a></li>
+          <li><a href="viral.html" class="hover:text-white transition">Contenu Viral</a></li>
+          <li><a href="money.html" class="hover:text-white transition">Gagner en ligne</a></li>
+          <li><a href="youtube.html" class="hover:text-white transition">YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Infos</h4>
+        <ul class="space-y-1 text-sm">
+          <li>100% gratuit</li>
+          <li>Accessible partout</li>
+          <li>FR • EN • ES</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-slate-800 text-center text-xs">
+      © 2026 Compétences Plus. Tous droits réservés. Plus qu’une formation, un avenir 💙
     </div>
   </footer>
-
-  <!-- Floating Newsletter CTA -->
-  <button onclick="openNewsletter()" class="floating-cta hidden sm:flex items-center gap-2 px-5 py-3 rounded-full bg-primary hover:bg-indigo-500 text-white text-sm font-semibold shadow-lg shadow-primary/30 transition">
-    <span>✉️</span>
-    <span data-i18n="newsletter_cta">Recevoir les nouveaux cours</span>
-  </button>
-
-  <!-- Newsletter Modal -->
-  <div id="newsletter-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
-    <div class="newsletter-card bg-slate-900 border border-slate-700 rounded-2xl max-w-md w-full p-8 relative shadow-2xl">
-      <button onclick="closeNewsletter()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-
-      <div id="newsletter-form">
-        <div class="text-4xl mb-4 text-center">🚀</div>
-        <h3 class="text-xl font-bold text-white text-center mb-2" data-i18n="newsletter_title">Reste à jour</h3>
-        <p class="text-slate-400 text-sm text-center mb-6" data-i18n="newsletter_desc">Reçois gratuitement les nouveaux cours et ressources directement dans ta boîte mail.</p>
-        
-        <form onsubmit="handleNewsletterSubmit(event)" class="space-y-4">
-          <input 
-            type="email" 
-            id="newsletter-email" 
-            required
-            placeholder="ton@email.com"
-            class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-primary transition"
-          >
-          <button type="submit" class="w-full py-3 rounded-xl bg-primary hover:bg-indigo-500 text-white font-semibold transition">
-            <span data-i18n="newsletter_btn">S'inscrire gratuitement</span>
-          </button>
-        </form>
-        <p class="text-xs text-slate-500 text-center mt-4">Pas de spam. Désinscription en 1 clic.</p>
-      </div>
-
-      <div id="newsletter-success" class="hidden text-center py-6">
-        <div class="text-5xl mb-4">✅</div>
-        <h3 class="text-xl font-bold text-white mb-2">Merci !</h3>
-        <p class="text-slate-400 text-sm">Tu es bien inscrit. À très vite dans ta boîte mail.</p>
-      </div>
-    </div>
-  </div>
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>

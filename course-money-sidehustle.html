@@ -3,267 +3,254 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lancez votre Side Hustle étape par étape. Idées concrètes, validation rapide et plan d'action 30 jours pour vos premiers euros.">
-  <meta name="robots" content="index, follow">
   <title>Side Hustle : les bases — Cours gratuit | Compétences Plus</title>
+  <meta name="description" content="Lancez votre Side Hustle étape par étape. Idées concrètes, validation rapide et plan d'action 30 jours.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: { primary: '#6366f1', dark: '#0f172a', darker: '#020617', accent: '#a78bfa' },
+          colors: { primary: '#2563eb' },
           fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
         }
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-darker text-slate-200 font-sans antialiased">
-  <header class="fixed top-0 left-0 right-0 z-50 bg-darker/80 backdrop-blur-xl border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="flex items-center gap-2">
-          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center font-bold text-white text-lg">CP</div>
-          <span class="font-semibold text-lg">Compétences Plus</span>
-        </a>
-        <div class="flex rounded-full bg-slate-800 p-1 text-xs font-medium">
-          <button onclick="setLang('fr')" id="btn-fr" class="lang-btn px-3 py-1.5 rounded-full">FR</button>
-          <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1.5 rounded-full">EN</button>
-          <button onclick="setLang('es')" id="btn-es" class="lang-btn px-3 py-1.5 rounded-full">ES</button>
-        </div>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-3xl mx-auto px-4 flex items-center justify-between h-14">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center text-white font-bold text-xs">CP</div>
+        <span class="font-bold text-slate-900 text-sm">Compétences Plus</span>
+      </a>
+      <div class="flex rounded-full bg-slate-100 p-0.5 text-xs font-semibold">
+        <button onclick="setLang('fr')" id="btn-fr" class="lang-btn px-2.5 py-1 rounded-full">FR</button>
+        <button onclick="setLang('en')" id="btn-en" class="lang-btn px-2.5 py-1 rounded-full">EN</button>
+        <button onclick="setLang('es')" id="btn-es" class="lang-btn px-2.5 py-1 rounded-full">ES</button>
       </div>
     </div>
   </header>
 
-  <main class="pt-24 pb-24">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6">
-      <div class="flex items-center gap-4 text-sm text-slate-400 mb-8">
-        <a href="index.html" class="hover:text-white transition">Retour à l'accueil</a>
-        <span>/</span>
-        <a href="money.html" class="hover:text-white transition">Gagner en ligne</a>
-      </div>
-
-      <div class="mb-10">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="level-badge level-beginner">Débutant</span>
-          <span class="text-slate-500 text-sm">9 étapes</span>
+  <main class="pb-20">
+    <div class="bg-gradient-to-br from-amber-500 to-orange-600 text-white px-4 py-10">
+      <div class="max-w-3xl mx-auto">
+        <div class="flex items-center gap-3 text-sm text-amber-100 mb-4">
+          <a href="index.html" class="hover:text-white">Accueil</a>
+          <span>/</span>
+          <a href="money.html" class="hover:text-white">Gagner en ligne</a>
         </div>
-        <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3">Side Hustle : les bases</h1>
-        <p class="text-slate-400 text-lg">Plan d’action concret pour lancer une activité secondaire et faire tes premiers euros.</p>
+        <div class="flex items-start gap-4">
+          <img src="images/mascot.svg" alt="Mascotte" class="w-16 h-18 hidden sm:block">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="level-badge level-beginner">Débutant</span>
+              <span class="text-amber-100 text-sm">9 étapes</span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold mb-2">Side Hustle : les bases</h1>
+            <p class="text-amber-100">Plan d’action concret pour faire tes premiers euros.</p>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 mb-10" data-course="money-sidehustle">
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-sm font-medium text-slate-300">Votre progression</span>
-          <span class="text-sm font-semibold text-primary" data-progress-text="money-sidehustle">0%</span>
+    <div class="max-w-3xl mx-auto px-4 -mt-6">
+      <div class="progress-card p-5 mb-8 shadow-sm" data-course="money-sidehustle">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-sm font-semibold text-slate-700">Ta progression</span>
+          <span class="text-sm font-bold text-amber-600" data-progress-text="money-sidehustle">0%</span>
         </div>
         <div class="progress-bar">
-          <div class="progress-fill" data-progress-bar="money-sidehustle" style="width: 0%"></div>
+          <div class="progress-fill" data-progress-bar="money-sidehustle" style="width:0%"></div>
         </div>
       </div>
 
       <div class="space-y-4" data-course="money-sidehustle">
-
-        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="1">
+        <div class="course-step p-5" data-step="1">
           <div class="flex gap-4">
-            <div class="custom-check" onclick="toggleStep('money-sidehustle', '1')">
+            <div class="custom-check" onclick="toggleStep('money-sidehustle','1')">
               <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
             </div>
             <div class="flex-1">
-              <span class="text-xs font-semibold text-amber-400">ÉTAPE 1</span>
-              <h3 class="font-semibold text-white mb-2 mt-1">Définis ton objectif réel</h3>
-              <div class="text-slate-400 text-sm space-y-2">
+              <span class="text-xs font-bold text-amber-500">ÉTAPE 1</span>
+              <h3 class="font-bold text-slate-900 mt-0.5 mb-2">Définis ton objectif réel</h3>
+              <div class="text-slate-600 text-sm space-y-1">
                 <p>Écris maintenant :</p>
-                <ul class="list-disc list-inside ml-1 space-y-1">
-                  <li>Combien tu veux gagner par mois dans 3 mois ? (ex: 300€, 500€, 1000€)</li>
-                  <li>Combien d’heures tu peux y consacrer par semaine ? (sois honnête)</li>
-                </ul>
-                <div class="bg-slate-800/60 rounded-lg p-3 mt-2">
-                  Exemple réaliste débutant : 5-8h/semaine → objectif 200-400€/mois après 2-3 mois.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="2">
-          <div class="flex gap-4">
-            <div class="custom-check" onclick="toggleStep('money-sidehustle', '2')">
-              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-            </div>
-            <div class="flex-1">
-              <span class="text-xs font-semibold text-amber-400">ÉTAPE 2</span>
-              <h3 class="font-semibold text-white mb-2 mt-1">Trouve 3 idées en 20 minutes</h3>
-              <div class="text-slate-400 text-sm space-y-2">
-                <p>Utilise cette formule :</p>
-                <p class="text-white font-medium">Compétence que tu as + Problème que les gens paient pour résoudre</p>
-                <p class="mt-2"><strong class="text-white">Exemples concrets 2026 :</strong></p>
-                <ul class="list-disc list-inside ml-1 space-y-1">
-                  <li>Montage CapCut pour créateurs TikTok</li>
-                  <li>Setup Notion pour étudiants / freelances</li>
-                  <li>Prompts IA + templates pour une niche</li>
-                  <li>Affiliation outils IA / productivité</li>
-                  <li>Mini-formations (Canva, ChatGPT, etc.)</li>
+                <ul class="list-disc list-inside">
+                  <li>Combien tu veux gagner par mois dans 3 mois ?</li>
+                  <li>Combien d’heures tu peux y consacrer par semaine ?</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="3">
+        <div class="course-step p-5" data-step="2">
           <div class="flex gap-4">
-            <div class="custom-check" onclick="toggleStep('money-sidehustle', '3')">
+            <div class="custom-check" onclick="toggleStep('money-sidehustle','2')">
               <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
             </div>
             <div class="flex-1">
-              <span class="text-xs font-semibold text-amber-400">ÉTAPE 3</span>
-              <h3 class="font-semibold text-white mb-2 mt-1">Valide ton idée en 48h (sans site)</h3>
-              <div class="text-slate-400 text-sm space-y-2">
-                <p><strong class="text-white">Méthode simple :</strong></p>
-                <ol class="list-decimal list-inside ml-1 space-y-1">
-                  <li>Écris une offre en 3 lignes (ce que tu fais + résultat + prix)</li>
-                  <li>Poste-la sur Instagram, TikTok, LinkedIn ou dans un groupe Facebook</li>
-                  <li>Ou envoie 10 messages privés à des gens de ta cible</li>
+              <span class="text-xs font-bold text-amber-500">ÉTAPE 2</span>
+              <h3 class="font-bold text-slate-900 mt-0.5 mb-2">Trouve 3 idées en 20 minutes</h3>
+              <div class="text-slate-600 text-sm">
+                <p class="mb-1">Formule : <strong>Compétence + Problème que les gens paient</strong></p>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Montage CapCut pour créateurs</li>
+                  <li>Setup Notion pour étudiants</li>
+                  <li>Prompts IA + templates</li>
+                  <li>Affiliation outils</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-step p-5" data-step="3">
+          <div class="flex gap-4">
+            <div class="custom-check" onclick="toggleStep('money-sidehustle','3')">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-bold text-amber-500">ÉTAPE 3</span>
+              <h3 class="font-bold text-slate-900 mt-0.5 mb-2">Valide ton idée en 48h</h3>
+              <div class="text-slate-600 text-sm">
+                <ol class="list-decimal list-inside space-y-1">
+                  <li>Écris une offre en 3 lignes</li>
+                  <li>Poste-la ou envoie 10 messages</li>
+                  <li>Si 3 personnes intéressées → tu continues</li>
                 </ol>
-                <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-3 mt-2">
-                  Si 3 personnes disent « je suis intéressé » → tu continues. Sinon tu pivotes.
-                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="4">
+        <div class="course-step p-5" data-step="4">
           <div class="flex gap-4">
-            <div class="custom-check" onclick="toggleStep('money-sidehustle', '4')">
+            <div class="custom-check" onclick="toggleStep('money-sidehustle','4')">
               <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
             </div>
             <div class="flex-1">
-              <span class="text-xs font-semibold text-amber-400">ÉTAPE 4</span>
-              <h3 class="font-semibold text-white mb-2 mt-1">Choisis ton modèle de revenus</h3>
-              <div class="text-slate-400 text-sm space-y-2">
-                <p>Les 4 plus accessibles pour débuter :</p>
-                <ul class="list-disc list-inside ml-1 space-y-1">
-                  <li><strong class="text-white">Service</strong> (montage, design, rédaction, setup Notion…)</li>
-                  <li><strong class="text-white">Affiliation</strong> (recommander des outils)</li>
-                  <li><strong class="text-white">Produit digital</strong> (templates, prompts, mini-guides)</li>
-                  <li><strong class="text-white">Contenu monétisé</strong> (YouTube / TikTok + affiliation)</li>
+              <span class="text-xs font-bold text-amber-500">ÉTAPE 4</span>
+              <h3 class="font-bold text-slate-900 mt-0.5 mb-2">Choisis ton modèle de revenus</h3>
+              <div class="text-slate-600 text-sm">
+                <ul class="list-disc list-inside space-y-1">
+                  <li><strong>Service</strong> (montage, design, rédaction…)</li>
+                  <li><strong>Affiliation</strong></li>
+                  <li><strong>Produit digital</strong> (templates, prompts)</li>
+                  <li><strong>Contenu monétisé</strong></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="5">
+        <div class="course-step p-5" data-step="5">
           <div class="flex gap-4">
-            <div class="custom-check" onclick="toggleStep('money-sidehustle', '5')">
+            <div class="custom-check" onclick="toggleStep('money-sidehustle','5')">
               <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
             </div>
             <div class="flex-1">
-              <span class="text-xs font-semibold text-amber-400">ÉTAPE 5</span>
-              <h3 class="font-semibold text-white mb-2 mt-1">Outils gratuits pour démarrer aujourd’hui</h3>
-              <div class="text-slate-400 text-sm space-y-1">
-                <ul class="list-disc list-inside ml-1 space-y-1">
-                  <li><strong class="text-white">Canva</strong> → visuels & miniatures</li>
-                  <li><strong class="text-white">CapCut</strong> → montage vidéo</li>
-                  <li><strong class="text-white">Notion</strong> → organisation + templates à vendre</li>
-                  <li><strong class="text-white">ChatGPT / Claude</strong> → contenu & idées</li>
-                  <li><strong class="text-white">Gumroad ou Payhip</strong> → vendre des produits digitaux</li>
-                  <li><strong class="text-white">Carrd</strong> → mini site en 10 minutes</li>
+              <span class="text-xs font-bold text-amber-500">ÉTAPE 5</span>
+              <h3 class="font-bold text-slate-900 mt-0.5 mb-2">Outils gratuits pour démarrer</h3>
+              <div class="text-slate-600 text-sm">
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Canva • CapCut • Notion</li>
+                  <li>ChatGPT / Claude</li>
+                  <li>Gumroad ou Payhip</li>
+                  <li>Carrd (mini site)</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="6">
+        <div class="course-step p-5" data-step="6">
           <div class="flex gap-4">
-            <div class="custom-check" onclick="toggleStep('money-sidehustle', '6')">
+            <div class="custom-check" onclick="toggleStep('money-sidehustle','6')">
               <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
             </div>
             <div class="flex-1">
-              <span class="text-xs font-semibold text-amber-400">ÉTAPE 6</span>
-              <h3 class="font-semibold text-white mb-2 mt-1">Organise ton temps (méthode simple)</h3>
-              <div class="text-slate-400 text-sm space-y-2">
-                <p>Bloque 2 créneaux fixes par semaine (ex: mardi 20h-22h + samedi 10h-12h).</p>
-                <p>Pendant ces créneaux : téléphone en mode avion, une seule tâche.</p>
+              <span class="text-xs font-bold text-amber-500">ÉTAPE 6</span>
+              <h3 class="font-bold text-slate-900 mt-0.5 mb-2">Organise ton temps</h3>
+              <div class="text-slate-600 text-sm">
+                Bloque 2 créneaux fixes par semaine. Téléphone en mode avion.
               </div>
             </div>
           </div>
         </div>
 
-        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="7">
+        <div class="course-step p-5" data-step="7">
           <div class="flex gap-4">
-            <div class="custom-check" onclick="toggleStep('money-sidehustle', '7')">
+            <div class="custom-check" onclick="toggleStep('money-sidehustle','7')">
               <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
             </div>
             <div class="flex-1">
-              <span class="text-xs font-semibold text-amber-400">ÉTAPE 7</span>
-              <h3 class="font-semibold text-white mb-2 mt-1">Les 5 erreurs qui font échouer 90% des gens</h3>
-              <div class="text-slate-400 text-sm space-y-1">
-                <ul class="list-disc list-inside ml-1 space-y-1">
-                  <li>Attendre d’avoir le site / logo parfait</li>
+              <span class="text-xs font-bold text-amber-500">ÉTAPE 7</span>
+              <h3 class="font-bold text-slate-900 mt-0.5 mb-2">Les 5 erreurs qui font échouer 90%</h3>
+              <div class="text-slate-600 text-sm">
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Attendre le site / logo parfait</li>
                   <li>Changer d’idée toutes les semaines</li>
-                  <li>Ne jamais demander de l’argent</li>
+                  <li>Ne jamais demander d’argent</li>
                   <li>Comparer son jour 1 au jour 365 des autres</li>
-                  <li>Abandonner après 2 semaines sans résultat</li>
+                  <li>Abandonner après 2 semaines</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="8">
+        <div class="course-step p-5" data-step="8">
           <div class="flex gap-4">
-            <div class="custom-check" onclick="toggleStep('money-sidehustle', '8')">
+            <div class="custom-check" onclick="toggleStep('money-sidehustle','8')">
               <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
             </div>
             <div class="flex-1">
-              <span class="text-xs font-semibold text-amber-400">ÉTAPE 8</span>
-              <h3 class="font-semibold text-white mb-2 mt-1">Plan d’action 30 jours</h3>
-              <div class="text-slate-400 text-sm space-y-2">
-                <ul class="list-disc list-inside ml-1 space-y-1">
-                  <li><strong>Semaine 1 :</strong> Choisir + valider l’idée</li>
-                  <li><strong>Semaine 2 :</strong> Créer l’offre + les supports (Canva / Notion)</li>
-                  <li><strong>Semaine 3 :</strong> Poster / prospecter tous les jours</li>
-                  <li><strong>Semaine 4 :</strong> Premières ventes + ajustements</li>
+              <span class="text-xs font-bold text-amber-500">ÉTAPE 8</span>
+              <h3 class="font-bold text-slate-900 mt-0.5 mb-2">Plan d’action 30 jours</h3>
+              <div class="text-slate-600 text-sm">
+                <ul class="list-disc list-inside space-y-1">
+                  <li><strong>Semaine 1 :</strong> Choisir + valider</li>
+                  <li><strong>Semaine 2 :</strong> Créer l’offre</li>
+                  <li><strong>Semaine 3 :</strong> Poster / prospecter</li>
+                  <li><strong>Semaine 4 :</strong> Premières ventes</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="step-card bg-slate-900/60 border border-slate-800 rounded-xl p-5" data-step="9">
+        <div class="course-step p-5" data-step="9">
           <div class="flex gap-4">
-            <div class="custom-check" onclick="toggleStep('money-sidehustle', '9')">
+            <div class="custom-check" onclick="toggleStep('money-sidehustle','9')">
               <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
             </div>
             <div class="flex-1">
-              <span class="text-xs font-semibold text-amber-400">ÉTAPE 9</span>
-              <h3 class="font-semibold text-white mb-2 mt-1">Projet final : ton premier test cette semaine</h3>
-              <div class="text-slate-400 text-sm space-y-2">
-                <p><strong class="text-white">Fais ces 3 actions avant dimanche soir :</strong></p>
-                <ol class="list-decimal list-inside ml-1 space-y-1">
+              <span class="text-xs font-bold text-amber-500">ÉTAPE 9</span>
+              <h3 class="font-bold text-slate-900 mt-0.5 mb-2">Projet final : ton premier test</h3>
+              <div class="text-slate-600 text-sm">
+                <ol class="list-decimal list-inside space-y-1">
                   <li>Choisis 1 idée</li>
                   <li>Écris ton offre en 3 lignes</li>
                   <li>Publie-la ou envoie-la à 5 personnes</li>
                 </ol>
-                <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4 mt-3">
-                  <strong class="text-amber-300">C’est ça le vrai démarrage.</strong> Pas un site parfait. Une offre + des gens qui la voient.
+                <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3 mt-3 text-emerald-800">
+                  <strong>C’est ça le vrai démarrage.</strong> Une offre + des gens qui la voient.
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </main>
 
-  <footer class="border-t border-slate-800 py-8">
-    <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm">Formations 100% gratuites • Apprenez les compétences du futur</div>
+  <footer class="border-t border-slate-200 py-8 text-center text-slate-400 text-sm">
+    Compétences Plus • Formations 100% gratuites
   </footer>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
